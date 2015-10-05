@@ -450,7 +450,7 @@ public class Html2pdf extends CordovaPlugin
             	filePdfDir.mkdirs();
             }
             PdfWriter.getInstance(document,new FileOutputStream(filePdf));
-            document.open();
+           // document.open();
             for( int i=1; i<=currPageCount; ++i )
             {
             	file = new File(dir, "pdf-page-"+i+".png");
